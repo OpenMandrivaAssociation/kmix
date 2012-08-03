@@ -1,12 +1,12 @@
 Name:		kmix
-Version:	4.8.95
+Version:	4.9.0
 Release:	1
 Epoch:		3
 Summary:	KDE Digital Mixer
 Group:		Graphical desktop/KDE
 License:	GPLv2
 URL:		http://www.kde.org/applications/multimedia/kmix/
-Source:		ftp://ftp.kde.org/pub/kde/unstable/%{version}/src/%{name}-%{version}.tar.xz
+Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(libcanberra)
