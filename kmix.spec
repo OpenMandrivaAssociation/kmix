@@ -1,6 +1,6 @@
 Name:		kmix
 Version: 4.9.2
-Release: 1
+Release: 2
 Epoch:		3
 Summary:	KDE Digital Mixer
 Group:		Graphical desktop/KDE
