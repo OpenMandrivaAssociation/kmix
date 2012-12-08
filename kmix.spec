@@ -1,12 +1,13 @@
 Name:		kmix
-Version: 4.9.3
-Release: 1
+Version:	4.9.4
+Release:	1
 Epoch:		3
 Summary:	KDE Digital Mixer
 Group:		Graphical desktop/KDE
 License:	GPLv2
 URL:		http://www.kde.org/applications/multimedia/kmix/
 Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		kmix-4.9.2-nodisplay.patch
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(libcanberra)
@@ -46,6 +47,7 @@ platforms and sound drivers.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %cmake_kde4
@@ -54,3 +56,30 @@ platforms and sound drivers.
 %install
 %makeinstall_std -C build
 
+%changelog
+* Wed Dec 05 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.9.4-1
+- New version 4.9.4
+
+* Wed Nov 07 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.9.3-1
+- New version 4.9.3
+
+* Thu Oct 04 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.9.2-2
+- New version 4.9.2
+- Add kmix-4.9.2-nodisplay patch
+
+* Sat Sep 08 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.9.1-1
+- New version 4.9.1
+
+* Tue Aug 14 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.9.0-1
+- New version 4.9.0
+
+* Sun Jul 22 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.8.97-1
+- New version 4.8.97
+
+* Wed Jul 11 2012 Andrey Bondrov <abondrov@mandriva.org> 3:4.8.95-1
++ Revision: 808878
+- imported package kmix
+
+
+* Tue Jul 10 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.8.95-1
+- Follow upstream and move kmix from kdemultimedia4 to own package
