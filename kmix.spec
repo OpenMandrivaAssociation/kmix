@@ -1,5 +1,5 @@
 Name:		kmix
-Version:	4.10.0
+Version:	4.10.1
 Release:	1
 Epoch:		3
 Summary:	KDE Digital Mixer
@@ -57,6 +57,9 @@ platforms and sound drivers.
 %makeinstall_std -C build
 
 %changelog
+* Sat Mar 09 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.10.1-1
+- New version 4.10.1
+
 * Thu Feb 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.10.0-1
 - New version 4.10.0
 
