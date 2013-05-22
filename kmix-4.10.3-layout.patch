@@ -7,7 +7,7 @@ diff -urN kmix-4.10.3/gui/viewdockareapopup.cpp kmix-4.10.3-patched/gui/viewdock
  	_layoutMDW->setSpacing(KDialog::spacingHint());
 -	_layoutMDW->setMargin(0);
 +	// Add some space over device icons, otherwise they may hit window border
-+	_layoutMDW->:setContentsMargins(0,5,0,0);
++	_layoutMDW->setContentsMargins(0,5,0,0);
  	//_layoutMDW->setSizeConstraint(QLayout::SetMinimumSize);
  	_layoutMDW->setSizeConstraint(QLayout::SetMaximumSize);
  	_layoutMDW->setObjectName(QLatin1String("KmixPopupLayout"));
