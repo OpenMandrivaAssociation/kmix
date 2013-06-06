@@ -1,6 +1,6 @@
 Name:		kmix
-Version:	4.10.3
-Release:	2
+Version:	4.10.4
+Release:	1
 Epoch:		3
 Summary:	KDE Digital Mixer
 Group:		Graphical desktop/KDE
@@ -61,6 +61,9 @@ platforms and sound drivers.
 %makeinstall_std -C build
 
 %changelog
+* Wed Jun 05 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.10.4-1
+- New version 4.10.4
+
 * Wed May 22 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.10.3-2
 - Add patch to adjust popup widget layout (device icons should no longer hit
   window border with some styles)
