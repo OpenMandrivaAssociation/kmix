@@ -31,6 +31,7 @@ platforms and sound drivers.
 %{_kde_appsdir}/plasma/services/mixer.operations
 %{_kde_bindir}/kmix
 %{_kde_bindir}/kmixctrl
+%{_kde_bindir}/kmixremote
 %{_kde_iconsdir}/*/*/*/*
 %{_kde_applicationsdir}/kmix.desktop
 %{_kde_services}/kmixctrl_restore.desktop
@@ -64,6 +65,7 @@ platforms and sound drivers.
 * Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.13.2-1
 - New version 4.13.2
 - Re-diff layout patch
+- New file kmixremote
 
 * Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.12.4-1
 - New version 4.12.4
