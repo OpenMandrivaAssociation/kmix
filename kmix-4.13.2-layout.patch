@@ -1,8 +1,8 @@
-diff -urN kmix-4.10.3/gui/viewdockareapopup.cpp kmix-4.10.3-patched/gui/viewdockareapopup.cpp
---- kmix-4.10.3/gui/viewdockareapopup.cpp	2013-05-03 15:41:29.153438148 +1100
-+++ kmix-4.10.3-patched/gui/viewdockareapopup.cpp	2013-05-23 02:25:59.254528560 +1100
-@@ -208,7 +208,8 @@
- //	delete _layoutMDW;
+diff -urN kmix-4.13.2/gui/viewdockareapopup.cpp kmix-4.13.2-patched/gui/viewdockareapopup.cpp
+--- kmix-4.13.2/gui/viewdockareapopup.cpp	2014-05-18 06:24:36.000000000 +1100
++++ kmix-4.13.2-patched/gui/viewdockareapopup.cpp	2014-06-14 22:12:50.235392723 +1100
+@@ -211,7 +211,8 @@
+ 	delete layout(); // BKO 299754
  	_layoutMDW = new QGridLayout(this);
  	_layoutMDW->setSpacing(KDialog::spacingHint());
 -	_layoutMDW->setMargin(0);
