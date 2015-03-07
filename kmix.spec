@@ -24,18 +24,15 @@ platforms and sound drivers.
 
 %files
 %{_kde_appsdir}/kmix
-%{_kde_appsdir}/plasma/services/mixer.operations
 %{_kde_bindir}/kmix
 %{_kde_bindir}/kmixctrl
 %{_kde_bindir}/kmixremote
 %{_kde_iconsdir}/*/*/*/*
 %{_kde_applicationsdir}/kmix.desktop
 %{_kde_services}/kmixctrl_restore.desktop
-%{_kde_services}/plasma-engine-mixer.desktop
 %{_kde_services}/kded/kmixd.desktop
 %{_kde_libdir}/libkdeinit4_kmix*
 %{_kde_libdir}/kde4/kded_kmixd.so
-%{_kde_libdir}/kde4/plasma_engine_mixer.so
 %{_kde_autostart}/restore_kmix_volumes.desktop
 %{_kde_autostart}/kmix_autostart.desktop
 %{_datadir}/dbus-1/interfaces/org.kde.kmix.control.xml
