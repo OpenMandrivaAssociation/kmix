@@ -1,16 +1,12 @@
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	4.14.3
-Release:	2
+Version:	14.12.3
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/multimedia/kmix/
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		kmix-4.9.2-nodisplay.patch
-# Adjust popup widget layout
-# Device icons should no longer hit window border with some styles
-Patch1:		kmix-4.13.2-layout.patch
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(libcanberra)
@@ -51,8 +47,6 @@ platforms and sound drivers.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
 
 %build
 %cmake_kde4
