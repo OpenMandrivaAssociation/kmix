@@ -1,13 +1,13 @@
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	15.04.0
+Version:	15.04.1
 Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/multimedia/kmix/
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs4-devel
+BuildRequires:	kdelibs4-devel >= 5:4.14.8
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(libcanberra)
 BuildRequires:	pkgconfig(libpulse)
