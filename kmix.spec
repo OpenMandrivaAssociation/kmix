@@ -1,23 +1,23 @@
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	15.04.3
-Release:	2
+Version:	15.08.0
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/multimedia/kmix/
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	cmake(ECM)
+BuildRequires: cmake(ECM)
 BuildRequires: cmake(KF5GlobalAcc)                                                                     
 BuildRequires: cmake(KF5I18n)                                                                          
 BuildRequires: cmake(KF5XmlGui)                                                                        
 BuildRequires: cmake(KF5DBusAddons)                                                                    
 BuildRequires: cmake(KF5KCMUtils)                                                                      
 BuildRequires: cmake(KF5KDELibs4Support)   
-BuildRequires:	pkgconfig(alsa)
-BuildRequires:	pkgconfig(libcanberra)
-BuildRequires:	pkgconfig(libpulse)
-BuildRequires:	pkgconfig(libpulse-mainloop-glib)
+BuildRequires: pkgconfig(alsa)
+BuildRequires: pkgconfig(libcanberra)
+BuildRequires: pkgconfig(libpulse)
+BuildRequires: pkgconfig(libpulse-mainloop-glib)
 Requires:	kdebase4-runtime
 Obsoletes:	kdemultimedia4-core < 3:4.5.71
 Conflicts:	kdemultimedia4-devel < 3:4.8.95
@@ -50,7 +50,7 @@ platforms and sound drivers.
 
 %prep
 %setup -q
-%cmake_kde5
+%cmake_kde5 -DKMIX_KF5_BUILD:BOOL=ON
 
 %build
 %ninja -C build
