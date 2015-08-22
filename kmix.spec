@@ -8,7 +8,7 @@ Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/multimedia/kmix/
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires: cmake(ECM)
-BuildRequires: cmake(KF5GlobalAcc)                                                                     
+BuildRequires: cmake(KF5GlobalAccel)                                                                     
 BuildRequires: cmake(KF5I18n)                                                                          
 BuildRequires: cmake(KF5XmlGui)                                                                        
 BuildRequires: cmake(KF5DBusAddons)                                                                    
