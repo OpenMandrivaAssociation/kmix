@@ -43,6 +43,7 @@ platforms and sound drivers.
 %{_datadir}/kmix/profiles/*.xml
 %{_datadir}/kservices5/kded/*.desktop
 %{_datadir}/kservices5/*.desktop
+%{_datadir}/kxmlgui5/kmix
 %{_iconsdir}/hicolor/*/actions/kmix.png
 
 #------------------------------------------------------------------------------
