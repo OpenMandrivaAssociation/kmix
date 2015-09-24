@@ -38,7 +38,6 @@ platforms and sound drivers.
 %{_libdir}/qt5/plugins/lib*_kmixd.so
 %{_datadir}/applications/kmix.desktop
 %{_datadir}/dbus-1/interfaces/org.kde.kmix.*.xml
-%{_datadir}/kmix/*.rc
 %{_datadir}/kmix/pics/*.png
 %{_datadir}/kmix/profiles/*.xml
 %{_datadir}/kservices5/kded/*.desktop
