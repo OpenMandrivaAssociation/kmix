@@ -7,17 +7,18 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/multimedia/kmix/
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires: cmake(ECM)
-BuildRequires: cmake(KF5GlobalAccel)
-BuildRequires: cmake(KF5I18n)
-BuildRequires: cmake(KF5XmlGui)
-BuildRequires: cmake(KF5DBusAddons)
-BuildRequires: cmake(KF5KCMUtils)
-BuildRequires: cmake(KF5KDELibs4Support)
-BuildRequires: pkgconfig(alsa)
-BuildRequires: pkgconfig(libcanberra)
-BuildRequires: pkgconfig(libpulse)
-BuildRequires: pkgconfig(libpulse-mainloop-glib)
+BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5GlobalAccel)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5KCMUtils)
+BuildRequires:	cmake(KF5KDELibs4Support)
+BuildRequires:	cmake(KF5Plasma)
+BuildRequires:	pkgconfig(alsa)
+BuildRequires:	pkgconfig(libcanberra)
+BuildRequires:	pkgconfig(libpulse)
+BuildRequires:	pkgconfig(libpulse-mainloop-glib)
 Obsoletes:	kdemultimedia4-core < 3:4.5.71
 Conflicts:	kdemultimedia4-devel < 3:4.8.95
 Conflicts:	kde4-audiocd < 3:4.8.95
