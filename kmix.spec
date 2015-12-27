@@ -37,6 +37,8 @@ platforms and sound drivers.
 %{_bindir}/kmix*
 %{_libdir}/lib*_kmix*.so
 %{_libdir}/qt5/plugins/lib*_kmixd.so
+%{_libdir}/qt5/plugins/plasma/dataengine/plasma_engine_mixer.so
+%{_datadir}/plasma/services/mixer.operations
 %{_datadir}/applications/kmix.desktop
 %{_datadir}/dbus-1/interfaces/org.kde.kmix.*.xml
 %{_datadir}/kmix/pics/*.png
