@@ -1,6 +1,6 @@
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	16.08.3
+Version:	16.12.2
 Release:	1
 Epoch:		3
 License:	GPLv2+
