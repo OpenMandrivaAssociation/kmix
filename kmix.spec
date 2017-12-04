@@ -2,7 +2,7 @@
 
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -30,7 +30,7 @@ KMix is an application to allow you to change the volume of your sound
 card. Though small, it is full-featured, and it supports several
 platforms and sound drivers.
 
-%files
+%files -f %{name}.lang
 %dir %{_datadir}/kmix
 %dir %{_datadir}/kmix/pics
 %dir %{_datadir}/kmix/profiles
@@ -41,7 +41,7 @@ platforms and sound drivers.
 %{_libdir}/qt5/plugins/lib*_kmixd.so
 %{_libdir}/qt5/plugins/plasma/dataengine/plasma_engine_mixer.so
 %{_datadir}/plasma/services/mixer.operations
-%{_datadir}/applications/kmix.desktop
+%{_datadir}/applications/org.kde.kmix.desktop
 %{_datadir}/dbus-1/interfaces/org.kde.kmix.*.xml
 %{_datadir}/kmix/pics/*.png
 %{_datadir}/kmix/profiles/*.xml
@@ -49,6 +49,7 @@ platforms and sound drivers.
 %{_datadir}/kservices5/*.desktop
 %{_datadir}/kxmlgui5/kmix
 %{_iconsdir}/hicolor/*/actions/kmix.png
+%{_datadir}/metainfo/org.kde.kmix.appdata.xml
 
 #------------------------------------------------------------------------------
 
@@ -61,3 +62,4 @@ platforms and sound drivers.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --all-name --with-html
