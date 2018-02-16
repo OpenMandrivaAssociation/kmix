@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kmix-17.12.1.tar.xz: 1dd409ff1a11525e3dd065640cd21a50399b10ed
+sources:
+  kmix-17.12.2.tar.xz: 38a4532620cf0154b3204b9e7d6b517c30128408

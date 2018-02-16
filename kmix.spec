@@ -2,7 +2,7 @@
 
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	17.12.1
+Version:	 17.12.2
 Release:	1
 Epoch:		3
 License:	GPLv2+
