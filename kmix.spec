@@ -2,7 +2,7 @@
 
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	 18.04.2
+Version:	 18.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -38,14 +38,17 @@ platforms and sound drivers.
 %{_sysconfdir}/xdg/autostart/*kmix_*.desktop
 %{_bindir}/kmix*
 %{_libdir}/lib*_kmix*.so
-%{_libdir}/qt5/plugins/lib*_kmixd.so
+# This is more of a module than a shared library.
+# Packaging it without libpackage is intentional.
+%{_libdir}/libkmixcore.so*
 %{_libdir}/qt5/plugins/plasma/dataengine/plasma_engine_mixer.so
+%{_libdir}/qt5/plugins/kf5/kded/kmixd.so
+%{_datadir}/knotifications5/kmix.notifyrc
 %{_datadir}/plasma/services/mixer.operations
 %{_datadir}/applications/org.kde.kmix.desktop
 %{_datadir}/dbus-1/interfaces/org.kde.kmix.*.xml
 %{_datadir}/kmix/pics/*.png
 %{_datadir}/kmix/profiles/*.xml
-%{_datadir}/kservices5/kded/*.desktop
 %{_datadir}/kservices5/*.desktop
 %{_datadir}/kxmlgui5/kmix
 %{_iconsdir}/hicolor/*/actions/kmix.png
