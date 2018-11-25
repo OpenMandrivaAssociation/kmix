@@ -2,7 +2,7 @@
 
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	 18.08.3
+Version:	 18.11.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -37,7 +37,6 @@ platforms and sound drivers.
 
 %{_sysconfdir}/xdg/autostart/*kmix_*.desktop
 %{_bindir}/kmix*
-%{_libdir}/lib*_kmix*.so
 # This is more of a module than a shared library.
 # Packaging it without libpackage is intentional.
 %{_libdir}/libkmixcore.so*
