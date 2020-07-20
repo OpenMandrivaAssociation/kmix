@@ -2,7 +2,7 @@
 
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	20.04.3
+Version:	20.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
