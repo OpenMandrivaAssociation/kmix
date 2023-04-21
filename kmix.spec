@@ -2,7 +2,7 @@
 
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	23.03.90
+Version:	23.04.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
