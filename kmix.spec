@@ -7,7 +7,7 @@ Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org/applications/multimedia/kmix/
+Url:		https://www.kde.org/applications/multimedia/kmix/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5GlobalAccel)
