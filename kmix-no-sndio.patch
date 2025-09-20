@@ -1,0 +1,14 @@
+diff -up kmix-25.08.1/CMakeLists.txt.omv~ kmix-25.08.1/CMakeLists.txt
+--- kmix-25.08.1/CMakeLists.txt.omv~	2025-09-21 00:17:31.875405158 +0200
++++ kmix-25.08.1/CMakeLists.txt	2025-09-21 00:18:19.696787102 +0200
+@@ -92,8 +92,9 @@ find_package(KF6 ${KF_MIN_VERSION} REQUI
+ ####################################################################################################
+ 
+ # sndio, only for that platform
++# ignore, because kmix isn't compatible with the current version
+ check_include_file("sndio.h" HAVE_SYS_SNDIO_H)
+-if (HAVE_SYS_SNDIO_H)
++if (FALSE)
+   message(STATUS "Building with sndio support")
+   set(HAVE_SNDIO_MIXER true)
+   add_definitions(-DHAVE_SNDIO_MIXER)
