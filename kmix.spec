@@ -2,7 +2,7 @@
 
 Summary:	KDE Digital Mixer
 Name:		kmix
-Version:	25.08.3
+Version:	25.12.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
